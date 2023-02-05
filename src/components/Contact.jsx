@@ -4,14 +4,14 @@ function contact() {
     return (
         <div
             name="contact"
-            className="w-full  bg-gradient-to-b from-black to-gray-800 p-4 text-white"
+            className="sm:pt-20 w-full  h-fit bg-gradient-to-b from-black to-gray-800 p-4 text-white"
         >
             <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
                 <div className="pb-8" style={{ paddingTop: '10rem' }}>
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">
                         Contact
                     </p>
-                    <p className="py-6">Submit the form below to get in touch with me</p>
+                    <p className="text-gray-400 py-6 max-w-xxl">Submit the form below to get in touch with me</p>
                 </div>
                 <div className="flex justify-center items-center">
                     <form
@@ -33,6 +33,7 @@ function contact() {
                         />
                         <textarea
                             name="message"
+                            style={{ resize: 'none' }}
                             placeholder="Enter your message"
                             rows="10"
                             className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"

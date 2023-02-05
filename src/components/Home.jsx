@@ -10,7 +10,7 @@ function Home() {
 
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='text-4xl sm:text-7xl font-bold text-white'>
+                    <h2 className='mt-8 text-4xl sm:text-7xl font-bold text-white'>
                         I'm a Full Stack Developer
                     </h2>
                     <p className='text-gray-500 py-4 max-w-md'>
@@ -28,7 +28,7 @@ function Home() {
                 </div>
 
                 <div>
-                    <img src={Heroimg} alt="my img" className='rounded-2xl mx-auto w-2/3 md:w-full mb-12 mt-5' />
+                    <img src={Heroimg} alt="my img" className='sm:mt-12 rounded-2xl mx-auto w-2/3 md:w-full mb-12 mt-5' />
                 </div>
             </div>
         </div>
