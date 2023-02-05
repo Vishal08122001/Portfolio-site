@@ -28,7 +28,7 @@ function SocialLinks() {
             child: (
                 <>Mail <HiOutlineMail size={30} /></>
             ),
-            href: 'mailto : vc31142@gmail.com',
+            href: 'mailto:vc31142@gmail.com',
         },
         {
             id: 4,
@@ -50,23 +50,84 @@ function SocialLinks() {
     ]
 
     return (
-        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed '>
-            <ul>
-                {links.map(({ child, id, href, style, download }) => {
-                    return (
-                        <li key={id} className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-gray-500 hover:ml-[-10px] hover:rounded-md duration-300 ${style}`} >
-                            <a className='flex justify-between items-center w-full
+        <div>
+            <div className='hidden lg:flex flex-col top-[35%] left-0 fixed '>
+                <ul>
+                    {links.map(({ child, id, href, style, download }) => {
+                        return (
+                            <li key={id} className={`flex justify-between items-center w-40 h-14 px-4 ml-[-100px] bg-gray-500 hover:ml-[-10px] hover:rounded-md duration-300 ${style}`} >
+                                <a className='flex justify-between items-center w-full
                             text-white
                             ' href={href}
-                                download={download}
-                                target='_blank'
-                                rel='noreferrer'
-                            > {child}
-                            </a>
-                        </li>
-                    )
-                })}
-            </ul>
+                                    download={download}
+                                    target='_blank'
+                                    rel='noreferrer'
+                                > {child}
+                                </a>
+                            </li>
+                        )
+                    })}
+                </ul>
+
+            </div>
+
+
+            <div className='flex top-[35%] right-0 fixed md:hidden'>
+                <ul>
+                    <li className={`flex justify-between items-center w-40 h-14 px-2 mr-[-120px] bg-gray-500  rounded-tl-md `} >
+                        <a className='flex justify-between items-center w-full
+                            text-white
+                            ' href='https://www.linkedin.com/in/vishal-chauhan-059601229/'
+                            target='_blank'
+                            rel='noreferrer'
+                        > <FaLinkedin size={20} />
+                        </a>
+                    </li>
+
+                    <li className={`flex justify-between items-center w-40 h-14 px-2 mr-[-120px] bg-gray-500  `} >
+                        <a className='flex justify-between items-center w-full
+                            text-white
+                            ' href='https://github.com/Vishal08122001'
+                            target='_blank'
+                            rel='noreferrer'
+                        > <FaGithub size={20} />
+                        </a>
+                    </li>
+
+                    <li className={`flex justify-between items-center w-40 h-14 px-2 mr-[-120px] bg-gray-500  `} >
+                        <a className='flex justify-between items-center w-full
+                            text-white
+                            ' href='mailto:vc31142@gmail.com'
+                            target='_blank'
+                            rel='noreferrer'
+                        > <HiOutlineMail size={20} />
+                        </a>
+                    </li>
+
+                    <li className={`flex justify-between items-center w-40 h-14 px-2 mr-[-120px] bg-gray-500   `} >
+                        <a className='flex justify-between items-center w-full
+                            text-white
+                            ' href='https://wa.me/+918076929271'
+                            target='_blank'
+                            rel='noreferrer'
+                        > <BsWhatsapp size={20} />
+                        </a>
+                    </li>
+
+
+                    <li className={`flex justify-between items-center w-40 h-14 px-2 mr-[-120px] bg-gray-500  rounded-bl-md`} >
+                        <a className='flex justify-between items-center w-full
+                            text-white
+                            ' href='/Resume-1.pdf'
+                            download={true}
+                            target='_blank'
+                            rel='noreferrer'
+                        >  <BsFillPersonLinesFill size={20} />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     )
 }
