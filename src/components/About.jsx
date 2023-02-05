@@ -13,8 +13,8 @@ const About = () => {
           </p>
         </div>
         <p className=" text-lg text-gray-400 py-6 max-w-xxl">
-          As you know my name is Vshal. I am basically from Mathura(Uttar Pradesh) but, i am settled in Faridabad from my childhood. Talking about my educational qualifications i completed my SSC from Goverment Modal Senior Secondary School with 8.4 CGPA
-          Currently i am persuring Bachelor in Commerce from University of Delhi (SOL) apart from that i am doing Web Development from Almabetter in which till now i have completed HTML, CSS, Javascript React, Redux, Node.js, Express.js, Mongoose, MongoDB, SQL etc.
+          As you know my name is Vishal. I am basically from Mathura(Uttar Pradesh) but, i am settled in Faridabad from my childhood. Talking about my educational qualifications i completed my SSC from Goverment Modal Senior Secondary School with 8.4 CGPA.
+          Currently, I am persuing Bachelor in Commerce from University of Delhi (SOL) apart from that i am doing Web Development from Almabetter in which till now i have completed HTML, CSS, Javascript React, Redux, Node.js, Express.js, Mongoose, MongoDB, SQL etc.
         </p>
 
         <br />
