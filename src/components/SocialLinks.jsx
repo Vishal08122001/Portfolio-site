@@ -35,8 +35,7 @@ function SocialLinks() {
             child: (
                 <>Whatsapp <BsWhatsapp size={30} /></>
             ),
-            href: 'https://wa.me/+918076929271',
-            style: 'rounded-br-md',
+            href: 'https://wa.me/+918076929271'
         },
         {
             id: 5,
