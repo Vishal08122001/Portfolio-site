@@ -15,8 +15,8 @@ const Portfolio = () => {
         {
             id: 2,
             src: reactParallax,
-            href: 'https://resume-buildd.netlify.app',
-            code: "https://github.com/Vishal08122001/Resume-Builder"
+            href: 'https://texttransition.netlify.app/',
+            code: "https://github.com/Vishal08122001/TextTransition-App"
         },
         {
             id: 3,
