@@ -1,6 +1,6 @@
 import React from "react";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import bookmyshow from "../assets/portfolio/bookmyshow.jpg";
+import texttransition from "../assets/portfolio/texttransition.png";
 import resumebuilder from '../assets/portfolio/resumebuilder.jpg'
 
 
@@ -14,15 +14,15 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            src: reactParallax,
+            src: texttransition,
             href: 'https://texttransition.netlify.app/',
             code: "https://github.com/Vishal08122001/TextTransition-App"
         },
         {
             id: 3,
-            src: navbar,
-            href: 'https://resume-buildd.netlify.app',
-            code: "https://github.com/Vishal08122001/Resume-Builder"
+            src: bookmyshow,
+            href: 'https://bookmyshow-4oos.onrender.com/',
+            code: "https://github.com/Vishal08122001/Bookmyshow"
         }
     ];
 
