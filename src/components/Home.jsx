@@ -1,7 +1,9 @@
 import React from 'react'
-import Heroimg from '../assets/Heroimg.png'
+import Heroimg from '../assets/hero1.jpg'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { Link } from 'react-scroll'
+import Typewriter from "typewriter-effect";
+
 
 
 function Home() {
@@ -10,11 +12,32 @@ function Home() {
 
             <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='mt-8 text-4xl sm:text-7xl font-bold text-white'>
-                        I'm a Full Stack Developer
+                    <h2 className='flex flex-col items-center justify-center mt-8 text-xl sm:text-4xl font-bold text-white'>
+                        <p>Hii, I'm a </p>
+                        <Typewriter
+                            options={{
+                                loop: true,
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .typeString("Frontend Developer!")
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .typeString("Backend Developer!")
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .typeString("Full Stack Developer!")
+                                    .pauseFor(1000)
+                                    .deleteAll()
+                                    .start();
+                            }}
+                        />
+
                     </h2>
                     <p className='text-gray-500 py-4 max-w-md'>
-                        Solution-driven web developer adept at contributing to highly collaborative work environment and finding solutions. Proven experience developing consumer-focused websites using HTML, CSS and JavaScript etc. Good knowledge of the best practices for web design, user experience, and speed.
+                        Develop web applications and backend systems using the MERN stack with a passionate and analytical mindset.
+                        Build clear and concise code that is easy to maintain and troubleshoot while demonstrating strong learning aptitude.
+
                     </p>
 
                     <div>
@@ -27,8 +50,8 @@ function Home() {
                     </div>
                 </div>
 
-                <div>
-                    <img src={Heroimg} alt="my img" className='sm:mt-12 rounded-2xl mx-auto w-2/3 md:w-full mb-12 mt-5' />
+                <div style={{ height: '400px', width: '400px' }} className='mt-5'>
+                    <img src={Heroimg} alt="my img" className='sm:mt-12 rounded-2xl  mx-auto w-2/3 md:w-full ' />
                 </div>
             </div>
         </div>

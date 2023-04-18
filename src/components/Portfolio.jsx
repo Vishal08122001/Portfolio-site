@@ -1,7 +1,8 @@
 import React from "react";
 import bookmyshow from "../assets/portfolio/bookmyshow.jpg";
 import texttransition from "../assets/portfolio/texttransition.png";
-import resumebuilder from '../assets/portfolio/resumebuilder.jpg'
+import resumebuilder from '../assets/portfolio/resumebuilder.jpg';
+import redbus from '../assets/portfolio/redbus.png'
 
 
 const Portfolio = () => {
@@ -23,6 +24,12 @@ const Portfolio = () => {
             src: bookmyshow,
             href: 'https://bookmyshow-4oos.onrender.com/',
             code: "https://github.com/Vishal08122001/Bookmyshow"
+        },
+        {
+            id: 4,
+            src: redbus,
+            href: 'https://reservebus.netlify.app/',
+            code: "https://github.com/Vishal08122001/Reserve-Bus"
         }
     ];
 
@@ -34,12 +41,12 @@ const Portfolio = () => {
             <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
                 <div className="pb-8" style={{ paddingTop: '7rem' }}>
                     <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-                        Portfolio
+                        Projects
                     </p>
                     <p className="text-gray-400 py-6 max-w-xxl">Check out some of my work right here</p>
                 </div>
 
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
+                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0">
                     {portfolios.map(({ id, src, href, code }) => (
                         <div key={id} className=" shadow-md shadow-gray-600 rounded-lg">
                             <img

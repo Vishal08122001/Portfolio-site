@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <p className=" text-lg text-gray-400 py-6 max-w-xxl">
           As you know my name is Vishal. I am basically from Mathura(Uttar Pradesh) but, i am settled in Faridabad from my childhood. Talking about my educational qualifications i completed my SSC from Goverment Modal Senior Secondary School with 8.4 CGPA.
-          Currently, I am persuing Bachelor in Commerce from University of Delhi (SOL) apart from that i am doing Web Development from Almabetter in which till now i have completed HTML, CSS, Javascript React, Redux, Node.js, Express.js, Mongoose, MongoDB, SQL etc.
+          Currently, I am persuing Bachelor in Commerce from University of Delhi (SOL) apart from that i have completed Web Development from Almabetter.
         </p>
 
         <br />
@@ -25,7 +25,6 @@ const About = () => {
 
           My strength is I am honest, self-motivated, and hardworking.
           My weakness is I am straightforward and I can not say no to people asking for help.
-          That's all about me. Thank you!
         </p>
       </div>
     </div>
